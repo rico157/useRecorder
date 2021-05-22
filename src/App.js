@@ -6,9 +6,7 @@ function App() {
   return (
     <div className="App">
       {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-      <audio controls>
-        <source src={audioURL}></source>
-      </audio>
+      <audio src={audioURL} controls />
       <button onClick={startRecording} disabled={isRecording}>
         start recording
       </button>
